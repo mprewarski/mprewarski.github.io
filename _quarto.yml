@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: docs
+execute:
+  python: /Users/marcusprewarski/projects/venv/bin/python
 
 website:
   title: "Marcus Prewarski"
@@ -15,6 +17,3 @@ format:
   html:
     theme: cosmo
     css: styles.css
-
-
-

@@ -7,18 +7,18 @@
     "text": "I’m a software engineer and now a machine learning ethusiast. The main topic will be Marchine Learning. I’m going to share stuff I’m working on or find interesting."
   },
   {
-    "objectID": "posts/img_to_img/img_to_img.html",
-    "href": "posts/img_to_img/img_to_img.html",
-    "title": "Image to image with Stable Diffusion",
+    "objectID": "posts/quant_sp500_5/index.html",
+    "href": "posts/quant_sp500_5/index.html",
+    "title": "S&P500 ML Quant Strategy",
     "section": "",
-    "text": "This notebook performs an image to image transform using stable diffusion. This is one of the suggested homework assignments from lecture 10 of the Fast AI course\nSeveral parts of this code are borrowed from other notebooks found here https://github.com/fastai/diffusion-nbs. And parts of that comes from the Huggingface example notebook."
+    "text": "I wanted to share what I’ve been working on in case any friends might find this useful or interesting. This is a quantitative stock selection strategy. It uses machine learning (ML) models to rank stocks in the S&P500 and selects the highest ranking ones.\nThis strategy has been live since November 26 and this chart shows the performance and some basic statistics.\n\n\nThese are the holdings as of today.\n\n\n\n\n\n\n\n\n\nTicker\nWeight\nReturn %\nReturn\nRank\nShares\nAvg Share Cost*\nCurrent Price\nValue\nDays Held\nSector\n\n\n\n\n0\nFTNT\n19.43%\n0.59%\n1182.84\n98.2\n2480.0\n81.08\n81.56\n202268.80\n28\nTechnology\n\n\n1\nGRMN\n20.24%\n5.17%\n10347.59\n99.8\n1025.0\n195.41\n205.51\n210647.75\n28\nTechnology\n\n\n2\nMETA\n20.07%\n2.76%\n5601.93\n98.8\n315.0\n645.51\n663.29\n208936.35\n28\nTechnology\n\n\n3\nNVDA\n20.28%\n7.26%\n14284.60\n99.2\n1108.0\n177.64\n190.53\n211107.24\n28\nTechnology\n\n\n4\nTTWO\n20.17%\n4.17%\n8399.97\n99.6\n820.0\n245.85\n256.09\n209993.80\n28\nTechnology"
   },
   {
-    "objectID": "posts/img_to_img/img_to_img.html#view-the-latents-vith-various-ammounts-of-noise",
-    "href": "posts/img_to_img/img_to_img.html#view-the-latents-vith-various-ammounts-of-noise",
-    "title": "Image to image with Stable Diffusion",
-    "section": "View the latents vith various ammounts of noise",
-    "text": "View the latents vith various ammounts of noise\nWe will begin the img to img transformation with the starting image with various amounts of noise added to it. The loop will remove the noise as it converges on an image from the prompt we provide.\nLooking at the latents below, I don’t see much image structure until the 3rd image which is would be step 20 out of 50, so that may be a good starting point.\n\nnoise = torch.randn_like(encoded)\n\n\nfig, axs = plt.subplots(1, 4, figsize=(16, 4))\nfor i in range(4):\n    sampling_step = i * 10\n    encoded_and_noised = scheduler.add_noise(encoded, noise, timesteps=torch.tensor([scheduler.timesteps[sampling_step]]))\n    img = latents_to_pil(encoded_and_noised.float())[0]\n    axs[i].imshow(img)"
+    "objectID": "posts/quant_sp500_5/index.html#sp500-5-ml-quant-strategy",
+    "href": "posts/quant_sp500_5/index.html#sp500-5-ml-quant-strategy",
+    "title": "S&P500 ML Quant Strategy",
+    "section": "",
+    "text": "I wanted to share what I’ve been working on in case any friends might find this useful or interesting. This is a quantitative stock selection strategy. It uses machine learning (ML) models to rank stocks in the S&P500 and selects the highest ranking ones.\nThis strategy has been live since November 26 and this chart shows the performance and some basic statistics.\n\n\nThese are the holdings as of today.\n\n\n\n\n\n\n\n\n\nTicker\nWeight\nReturn %\nReturn\nRank\nShares\nAvg Share Cost*\nCurrent Price\nValue\nDays Held\nSector\n\n\n\n\n0\nFTNT\n19.43%\n0.59%\n1182.84\n98.2\n2480.0\n81.08\n81.56\n202268.80\n28\nTechnology\n\n\n1\nGRMN\n20.24%\n5.17%\n10347.59\n99.8\n1025.0\n195.41\n205.51\n210647.75\n28\nTechnology\n\n\n2\nMETA\n20.07%\n2.76%\n5601.93\n98.8\n315.0\n645.51\n663.29\n208936.35\n28\nTechnology\n\n\n3\nNVDA\n20.28%\n7.26%\n14284.60\n99.2\n1108.0\n177.64\n190.53\n211107.24\n28\nTechnology\n\n\n4\nTTWO\n20.17%\n4.17%\n8399.97\n99.6\n820.0\n245.85\n256.09\n209993.80\n28\nTechnology"
   },
   {
     "objectID": "save_README.html",
@@ -32,6 +32,6 @@
     "href": "index.html",
     "title": "Marcus Prewarski",
     "section": "",
-    "text": "Image to image with Stable Diffusion\n\n\n\n\n\n\n\nStableDiffusion\n\n\nFastAI\n\n\n\n\n\n\n\n\n\n\n\nMar 24, 2024\n\n\n\n\n\n\nNo matching items"
+    "text": "S&P500 ML Quant Strategy\n\n\n\n\n\nThis is a live strategy for investing in 5 stocks from the S&P 500\n\n\n\n\n\n\nDec 28, 2025\n\n\nMarcus Prewarski\n\n\n\n\n\n\nNo matching items"
   }
 ]

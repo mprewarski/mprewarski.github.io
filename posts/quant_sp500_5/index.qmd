@@ -1,0 +1,31 @@
+---
+title: "S&P500 ML Quant Strategy"
+description: "This is a live strategy for investing in 5 stocks from the S&P 500"
+author: "Marcus Prewarski"
+date: "12/28/2025"
+draft: false
+execute:
+  python: /Users/marcusprewarski/projects/venv/bin/python
+---
+
+## S&P500 5 ML Quant Strategy
+
+I wanted to share what I've been working on in case any friends might find this useful or interesting.
+This is a quantitative stock selection strategy. It uses machine learning (ML) models to rank stocks
+in the S&P500 and selects the highest ranking ones.
+
+This strategy has been live since November 26 and this chart shows the performance and some basic statistics.
+
+<iframe width="490" height="865" src="https://www.portfolio123.com/embedded_port.jsp?portid=1898665&amp;title=1&amp;stats=1&amp;chartH=475&amp;chartW=440" frameborder="0"></iframe>
+
+These are the holdings as of today.
+
+```{python}
+#| echo: false
+import pandas as pd
+
+holdings = pd.read_csv("holdings.csv")
+holdings.columns = holdings.columns.str.strip()
+holdings = holdings.loc[:, ~holdings.columns.str.contains("^Unnamed")]
+holdings
+```
