@@ -3,6 +3,8 @@ project:
   output-dir: docs
 execute:
   python: /Users/marcusprewarski/projects/venv/bin/python
+editor: 
+  render-on-save: true
 
 website:
   title: "Marcus Prewarski"

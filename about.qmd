@@ -16,4 +16,4 @@ about:
 
 ---
 
-I'm a software engineer and now a machine learning ethusiast. The main topic will be Marchine Learning. I'm going to share stuff I'm working on or find interesting. 
+Nothing to see here yet.
