@@ -1,6 +1,6 @@
 ---
 title: "Same Ranking System but with 10 stocks"
-description: "This is a live strategy for investing in 5 stocks from the S&P 500"
+description: "This strategy uses the same ML ranking system but selects the top 10 stocks from the S^P500"
 author: "Marcus Prewarski"
 date: "01/08/2026"
 draft: false
