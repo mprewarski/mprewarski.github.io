@@ -21,10 +21,17 @@
     "text": "Hi there 👋"
   },
   {
+    "objectID": "posts/ai_sp500_10/index.html",
+    "href": "posts/ai_sp500_10/index.html",
+    "title": "Same Ranking System but with 10 stocks",
+    "section": "",
+    "text": "S&P500 10 ML Quant Strategy\nThis strategy uses the same Machine Learning ranking system as in the previous post. The difference is this one selects 10 stocks and has slightly different sell rules that attempt to minimize turnover for taxable accounts.\nI expect this one to beat the S&P500 benchmark over time but probably not do as well as the strategy with the top 5 stocks. In evaluation of the model and backtesting of the strategy, selecting the top 5 stocks performed better.\n\n\nThese are the holdings as of 01/08/2026.\n\n\n\n\n\n\n\n\n\nTicker\nWeight\nReturn %\nReturn\nRank\nShares\nAvg Share Cost*\nCurrent Price\nValue\nDays Held\nSector\n\n\n\n\n0\nAMP\n9.68%\n-1.59%\n-1596.73\n99.2\n199.0\n506.06\n498.04\n99109.96\n2\nFinance\n\n\n1\nFTNT\n9.69%\n-1.31%\n-1318.18\n93.2\n1240.0\n81.08\n80.02\n99224.80\n40\nTechnology\n\n\n2\nGRMN\n10.54%\n7.81%\n7815.79\n99.0\n512.0\n195.41\n210.68\n107868.16\n40\nTechnology\n\n\n3\nIBKR\n10.84%\n9.74%\n9856.58\n88.8\n1556.0\n65.01\n71.34\n111005.04\n40\nFinance\n\n\n4\nMETA\n9.95%\n0.49%\n499.87\n99.8\n157.0\n645.51\n648.69\n101844.33\n40\nTechnology\n\n\n5\nNOW\n9.14%\n-7.05%\n-7101.51\n96.4\n620.0\n162.35\n150.90\n93558.00\n40\nTechnology\n\n\n6\nNVDA\n10.24%\n6.46%\n6355.62\n98.6\n554.0\n177.64\n189.11\n104766.94\n40\nTechnology\n\n\n7\nPANW\n10.19%\n2.20%\n2244.62\n95.4\n538.0\n189.73\n193.90\n104318.20\n40\nTechnology\n\n\n8\nTTWO\n10.28%\n4.40%\n4437.79\n97.0\n410.0\n245.85\n256.67\n105234.70\n40\nTechnology\n\n\n9\nWDAY\n9.55%\n-2.29%\n-2293.74\n98.2\n463.0\n216.09\n211.14\n97757.82\n40\nTechnology"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Marcus Prewarski",
     "section": "",
-    "text": "S&P500 ML Quant Strategy\n\n\n\n\n\n\n\nS&P500\n\n\nMachine Learning\n\n\nLightGBM\n\n\nQuant\n\n\n\n\nThis is a live strategy for investing in 5 stocks from the S&P 500\n\n\n\n\n\n\nDec 28, 2025\n\n\nMarcus Prewarski\n\n\n\n\n\n\nNo matching items"
+    "text": "Same Ranking System but with 10 stocks\n\n\n\n\n\n\n\nS&P500\n\n\nMachine Learning\n\n\nLightGBM\n\n\nQuant\n\n\n\n\nThis is a live strategy for investing in 5 stocks from the S&P 500\n\n\n\n\n\n\nJan 8, 2026\n\n\nMarcus Prewarski\n\n\n\n\n\n\n  \n\n\n\n\nS&P500 ML Quant Strategy\n\n\n\n\n\n\n\nS&P500\n\n\nMachine Learning\n\n\nLightGBM\n\n\nQuant\n\n\n\n\nThis is a live strategy for investing in 5 stocks from the S&P 500\n\n\n\n\n\n\nDec 28, 2025\n\n\nMarcus Prewarski\n\n\n\n\n\n\nNo matching items"
   }
 ]

@@ -1,0 +1,37 @@
+---
+title: "Same Ranking System but with 10 stocks"
+description: "This is a live strategy for investing in 5 stocks from the S&P 500"
+author: "Marcus Prewarski"
+date: "01/08/2026"
+draft: false
+categories:
+  - S&P500
+  - Machine Learning
+  - LightGBM
+  - Quant
+execute:
+  python: /Users/marcusprewarski/projects/venv/bin/python
+---
+
+# S&P500 10 ML Quant Strategy
+
+This strategy uses the same Machine Learning ranking system as in the previous post. The difference is this
+one selects 10 stocks and has slightly different sell rules that attempt to minimize turnover for taxable accounts.
+
+I expect this one to beat the S&P500 benchmark over time but probably not do as well as the strategy with the top 5 stocks.
+In evaluation of the model and backtesting of the strategy, selecting the top 5 stocks performed better.
+
+<iframe width="490" height="865" src="https://www.portfolio123.com/embedded_port.jsp?portid=1898693&amp;title=1&amp;stats=1&amp;chartH=475&amp;chartW=440" frameborder="0"></iframe>
+
+These are the holdings as of 01/08/2026.
+
+```{python}
+#| echo: false
+import pandas as pd
+
+holdings = pd.read_csv("holdings.csv")
+holdings.columns = holdings.columns.str.strip()
+holdings = holdings.loc[:, ~holdings.columns.str.contains("^Unnamed")]
+holdings
+```
+

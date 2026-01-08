@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Marcus Prewarski">
+<meta name="dcterms.date" content="2026-01-08">
+<meta name="description" content="This is a live strategy for investing in 5 stocks from the S&amp;P 500">
 
-<title>Marcus Prewarski</title>
+<title>Marcus Prewarski - Same Ranking System but with 10 stocks</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +26,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -61,50 +62,22 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Marcus Prewarski</span>
     </a>
   </div>
@@ -115,7 +88,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html" rel="" target="">
+    <a class="nav-link" href="../../about.html" rel="" target="">
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -136,116 +109,236 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Same Ranking System but with 10 stocks</h1>
+                  <div>
+        <div class="description">
+          This is a live strategy for investing in 5 stocks from the S&amp;P 500
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">S&amp;P500</div>
+                <div class="quarto-category">Machine Learning</div>
+                <div class="quarto-category">LightGBM</div>
+                <div class="quarto-category">Quant</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Marcus Prewarski </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">January 8, 2026</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="LightGBM">LightGBM <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Machine Learning">Machine Learning <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Quant">Quant <span class="quarto-category-count">(2)</span></div><div class="category" data-category="S&amp;P500">S&amp;P500 <span class="quarto-category-count">(2)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
+<section id="sp500-10-ml-quant-strategy" class="level1">
+<h1>S&amp;P500 10 ML Quant Strategy</h1>
+<p>This strategy uses the same Machine Learning ranking system as in the previous post. The difference is this one selects 10 stocks and has slightly different sell rules that attempt to minimize turnover for taxable accounts.</p>
+<p>I expect this one to beat the S&amp;P500 benchmark over time but probably not do as well as the strategy with the top 5 stocks. In evaluation of the model and backtesting of the strategy, selecting the top 5 stocks performed better.</p>
+<iframe width="490" height="865" src="https://www.portfolio123.com/embedded_port.jsp?portid=1898693&amp;title=1&amp;stats=1&amp;chartH=475&amp;chartW=440" frameborder="0">
+</iframe>
+<p>These are the holdings as of 01/08/2026.</p>
+<div class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display" data-execution_count="3">
+<div>
 
 
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Ticker</th>
+<th data-quarto-table-cell-role="th">Weight</th>
+<th data-quarto-table-cell-role="th">Return %</th>
+<th data-quarto-table-cell-role="th">Return</th>
+<th data-quarto-table-cell-role="th">Rank</th>
+<th data-quarto-table-cell-role="th">Shares</th>
+<th data-quarto-table-cell-role="th">Avg Share Cost*</th>
+<th data-quarto-table-cell-role="th">Current Price</th>
+<th data-quarto-table-cell-role="th">Value</th>
+<th data-quarto-table-cell-role="th">Days Held</th>
+<th data-quarto-table-cell-role="th">Sector</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>AMP</td>
+<td>9.68%</td>
+<td>-1.59%</td>
+<td>-1596.73</td>
+<td>99.2</td>
+<td>199.0</td>
+<td>506.06</td>
+<td>498.04</td>
+<td>99109.96</td>
+<td>2</td>
+<td>Finance</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>FTNT</td>
+<td>9.69%</td>
+<td>-1.31%</td>
+<td>-1318.18</td>
+<td>93.2</td>
+<td>1240.0</td>
+<td>81.08</td>
+<td>80.02</td>
+<td>99224.80</td>
+<td>40</td>
+<td>Technology</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>GRMN</td>
+<td>10.54%</td>
+<td>7.81%</td>
+<td>7815.79</td>
+<td>99.0</td>
+<td>512.0</td>
+<td>195.41</td>
+<td>210.68</td>
+<td>107868.16</td>
+<td>40</td>
+<td>Technology</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>IBKR</td>
+<td>10.84%</td>
+<td>9.74%</td>
+<td>9856.58</td>
+<td>88.8</td>
+<td>1556.0</td>
+<td>65.01</td>
+<td>71.34</td>
+<td>111005.04</td>
+<td>40</td>
+<td>Finance</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>META</td>
+<td>9.95%</td>
+<td>0.49%</td>
+<td>499.87</td>
+<td>99.8</td>
+<td>157.0</td>
+<td>645.51</td>
+<td>648.69</td>
+<td>101844.33</td>
+<td>40</td>
+<td>Technology</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">5</td>
+<td>NOW</td>
+<td>9.14%</td>
+<td>-7.05%</td>
+<td>-7101.51</td>
+<td>96.4</td>
+<td>620.0</td>
+<td>162.35</td>
+<td>150.90</td>
+<td>93558.00</td>
+<td>40</td>
+<td>Technology</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">6</td>
+<td>NVDA</td>
+<td>10.24%</td>
+<td>6.46%</td>
+<td>6355.62</td>
+<td>98.6</td>
+<td>554.0</td>
+<td>177.64</td>
+<td>189.11</td>
+<td>104766.94</td>
+<td>40</td>
+<td>Technology</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">7</td>
+<td>PANW</td>
+<td>10.19%</td>
+<td>2.20%</td>
+<td>2244.62</td>
+<td>95.4</td>
+<td>538.0</td>
+<td>189.73</td>
+<td>193.90</td>
+<td>104318.20</td>
+<td>40</td>
+<td>Technology</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">8</td>
+<td>TTWO</td>
+<td>10.28%</td>
+<td>4.40%</td>
+<td>4437.79</td>
+<td>97.0</td>
+<td>410.0</td>
+<td>245.85</td>
+<td>256.67</td>
+<td>105234.70</td>
+<td>40</td>
+<td>Technology</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">9</td>
+<td>WDAY</td>
+<td>9.55%</td>
+<td>-2.29%</td>
+<td>-2293.74</td>
+<td>98.2</td>
+<td>463.0</td>
+<td>216.09</td>
+<td>211.14</td>
+<td>97757.82</td>
+<td>40</td>
+<td>Technology</td>
+</tr>
+</tbody>
+</table>
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="S&amp;P500,Machine Learning,LightGBM,Quant" data-listing-date-sort="1767859200000" data-listing-file-modified-sort="1767879229428" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="./posts/ai_sp500_10/index.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
-<div class="body">
-<a href="./posts/ai_sp500_10/index.html">
-<h3 class="no-anchor listing-title">
-Same Ranking System but with 10 stocks
-</h3>
-<div class="listing-subtitle">
+</div>
+</div>
 
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('S&amp;P500'); return false;">
-S&amp;P500
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Machine Learning'); return false;">
-Machine Learning
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('LightGBM'); return false;">
-LightGBM
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Quant'); return false;">
-Quant
-</div>
-</div>
-<a href="./posts/ai_sp500_10/index.html">
-<div class="listing-description">
-<p>This is a live strategy for investing in 5 stocks from the S&amp;P 500</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/ai_sp500_10/index.html">
-<div class="listing-date">
-Jan 8, 2026
-</div>
-<div class="listing-author">
-Marcus Prewarski
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="S&amp;P500,Machine Learning,LightGBM,Quant" data-listing-date-sort="1766908800000" data-listing-file-modified-sort="1767062707768" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
-<div class="thumbnail">
-<p><a href="./posts/quant_sp500_5/index.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
-</div>
-<div class="body">
-<a href="./posts/quant_sp500_5/index.html">
-<h3 class="no-anchor listing-title">
-S&amp;P500 ML Quant Strategy
-</h3>
-<div class="listing-subtitle">
 
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('S&amp;P500'); return false;">
-S&amp;P500
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Machine Learning'); return false;">
-Machine Learning
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('LightGBM'); return false;">
-LightGBM
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Quant'); return false;">
-Quant
-</div>
-</div>
-<a href="./posts/quant_sp500_5/index.html">
-<div class="listing-description">
-<p>This is a live strategy for investing in 5 stocks from the S&amp;P 500</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/quant_sp500_5/index.html">
-<div class="listing-date">
-Dec 28, 2025
-</div>
-<div class="listing-author">
-Marcus Prewarski
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
