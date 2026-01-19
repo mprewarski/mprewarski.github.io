@@ -1,8 +1,7 @@
 ---
 title: "S&P500 ML Quant Strategy"
 description: "This is a live strategy for investing in 5 stocks from the S&P 500"
-author: "Marcus Prewarski"
-date: "12/28/2025"
+date: "1/19/2026"
 draft: false
 categories:
   - S&P500
@@ -23,7 +22,8 @@ In the chart below the benchmark is the S&P500.
 
 <iframe width="490" height="865" src="https://www.portfolio123.com/embedded_port.jsp?portid=1898665&amp;title=1&amp;stats=1&amp;chartH=475&amp;chartW=440" frameborder="0"></iframe>
 
-These are the holdings as of 12/28/2025.
+
+These are the holdings as of 1/20/2026.
 
 ```{python}
 #| echo: false
@@ -34,6 +34,14 @@ holdings.columns = holdings.columns.str.strip()
 holdings = holdings.loc[:, ~holdings.columns.str.contains("^Unnamed")]
 holdings
 ```
+
+New trade for the 1/20/26:
+
+| Date     | Type | Ticker   | Shares   | Price  | Amount      | Tot Fees | Rank | Note | TRADE |
+|----------|------|----------|----------|--------|-------------|----------|------|------|-------|
+| 01/20/26 | BUY  | MSFT:USA | 401.0    | 459.86 | -184,592.27 | -188.41  | 99.6 |      |       |
+| 01/20/26 | SELL | FTNT:USA | -2,480.0 | 75.38  | 186,730.66  | -211.74  | 91.8 | Rank |       |
+
 
 There are different components to a quantitative stock selection strategy.
 
