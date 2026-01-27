@@ -23,7 +23,7 @@ In the chart below the benchmark is the S&P500.
 <iframe width="490" height="865" src="https://www.portfolio123.com/embedded_port.jsp?portid=1898665&amp;title=1&amp;stats=1&amp;chartH=475&amp;chartW=440" frameborder="0"></iframe>
 
 
-These are the holdings as of 1/20/2026.
+These are the holdings as of 1/26/2026.
 
 ```{python}
 #| echo: false
@@ -35,19 +35,24 @@ holdings = holdings.loc[:, ~holdings.columns.str.contains("^Unnamed")]
 holdings
 ```
 
-New trade for the 1/20/26:
+Below is a table of recent transactions.
 
-| Date     | Type | Ticker   | Shares   | Price  | Amount      | Tot Fees | Rank | Note | TRADE |
-|----------|------|----------|----------|--------|-------------|----------|------|------|-------|
-| 01/20/26 | BUY  | MSFT:USA | 401.0    | 459.86 | -184,592.27 | -188.41  | 99.6 |      |       |
-| 01/20/26 | SELL | FTNT:USA | -2,480.0 | 75.38  | 186,730.66  | -211.74  | 91.8 | Rank |       |
+```{python}
+#| echo: false
+import pandas as pd
 
+holdings = pd.read_csv("transactions.csv")
+holdings.columns = holdings.columns.str.strip()
+holdings = holdings.loc[:, ~holdings.columns.str.contains("^Unnamed")]
+holdings
+```
 
 There are different components to a quantitative stock selection strategy.
 
 ### Stock Universe
 
 The Universe is the group of stocks used in the strategy. This one uses only stocks within the S&P500 index.
+
 
 ### Ranking System
 

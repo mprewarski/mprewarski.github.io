@@ -9,12 +9,13 @@ editor:
 website:
   title: "Marcus Prewarski"
   navbar:
+    search: true
     right:
       - about.qmd
+      - text: "Home"
+        href: index.qmd
       - icon: github
         href: https://github.com/
-      - icon: twitter
-        href: https://twitter.com
 format:
   html:
     theme: cosmo
