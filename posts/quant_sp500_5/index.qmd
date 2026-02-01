@@ -1,7 +1,7 @@
 ---
 title: "S&P500 ML Quant Strategy"
 description: "This is a live strategy for investing in 5 stocks from the S&P 500"
-date: "1/26/2026"
+date: "2/2/2026"
 draft: false
 categories:
   - S&P500
@@ -23,7 +23,7 @@ In the chart below the benchmark is the S&P500.
 <iframe width="490" height="865" src="https://www.portfolio123.com/embedded_port.jsp?portid=1898665&amp;title=1&amp;stats=1&amp;chartH=475&amp;chartW=440" frameborder="0"></iframe>
 
 
-These are the holdings as of 1/26/2026.
+These are the holdings as of 2/02/2026.
 
 ```{python}
 #| echo: false
